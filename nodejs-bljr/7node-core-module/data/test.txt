@@ -1,0 +1,1 @@
+Dimas kalo yg ini dibuat pakai asynchronous

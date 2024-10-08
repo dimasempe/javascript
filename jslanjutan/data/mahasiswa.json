@@ -1,0 +1,23 @@
+[
+    {
+        "nama"          :"Dimas Maulana Putra",
+        "nrp"           :"50420379",
+        "email"         :"dimas.maulanaputra13@gmail.com",
+        "jurusan"       :"Informatika",
+        "idDosenWali"   :1
+    },
+    {
+        "nama"          :"Dinda Aulia Putri",
+        "nrp"           :"14373574",
+        "email"         :"dinda@gmail.com",
+        "jurusan"       :"Teknik Mesin",
+        "idDosenWali"   :2
+    },
+    {
+        "nama"          :"Julaeha",
+        "nrp"           :"37349833",
+        "email"         :"julaeha@gmail.com",
+        "jurusan"       :"Arsitektur",
+        "idDosenWali"   :3
+    }
+]
