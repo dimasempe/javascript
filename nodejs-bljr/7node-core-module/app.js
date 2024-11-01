@@ -35,12 +35,28 @@ const readline = require('node:readline');
 //     }
 // })
 
+
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 })
 
 rl.question('Masukkan nama anda: ', (nama)=>{
-    console.log(`Terima kasih ${nama}`)
-    rl.close()
+    rl.question('Masukkan nomor HP Anda: ', (noHP)=>{
+        // console.log(`Terima kasih ${nama}, sudah menambahkan nomor hp ${noHP}`)
+        const contact = {
+            nama,
+            noHP
+        }
+        const file = fs.readFileSync('data/contacts.json','utf-8')
+        // console.log(file)
+        const contacts = JSON.parse(file)
+        contacts.push(contact)
+        console.log(contacts)
+
+        fs.writeFileSync('data/contacts.json',JSON.stringify(contacts))
+        console.log('Terima kasih telah memasukkan data')
+        rl.close()
+    })
+    
 })

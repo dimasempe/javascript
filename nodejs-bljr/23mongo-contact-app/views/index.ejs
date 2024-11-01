@@ -1,0 +1,20 @@
+
+    <% const nama = 'Dimas maulana'; %>
+
+    <h1>Helllooo worrrlllddd</h1>
+    <h2>Halo <%= nama %></h2>
+    <h2>Umur saya <%= umur %></h2>
+    <p>welcome to my site</p>
+    <% if (books.length == 0) { %>
+    <p>Data mahasiswa masih kosong</p>
+    <% } else { %>
+        <h4>Daftar Buku</h4>
+        <% books.forEach(book => { %>
+        <ul>
+            <li><%= book.judul%></li>
+            <li><%= book.harga%></li>
+            <hr />
+        </ul>
+        <% }) %> 
+    <% } %>
+
